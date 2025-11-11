@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DATA MAHASISWA</title>
+
+  <style>
+    body {
+      background-color: rgb(169, 135, 104);
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    h1 {
+      color: green;
+      text-align: center;
+      border: 2px solid black;
+      border-radius: 5px;
+      background-color: antiquewhite;
+      padding: 8px;
+      width: 40%;
+      font-size: 20px;
+    }
+
+    form {
+      background-color: antiquewhite;
+      border: 2px solid black;
+      border-radius: 10px;
+      padding: 15px 25px;
+      width: 40%;
+      box-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+      font-size: 14px;
+    }
+
+    p, label {
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    input[type="text"], input[type="date"], select {
+      margin-top: 5px;
+      margin-bottom: 10px;
+      width: 100%;
+      padding: 4px;
+      border-radius: 4px;
+      border: 1px solid #888;
+      font-size: 13px;
+    }
+
+    .gender-group {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 15px;
+    }
+
+    .gender-group label {
+      font-weight: normal;
+      font-size: 13px;
+    }
+
+    button {
+      display: block;
+      margin: 10px auto 0 auto;
+      background-color: green;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 13px;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background-color: darkgreen;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+
+<body>
+  <h1>INPUT DATA MAHASISWA</h1>
+
+  <form>
+    <label for="NIM">NIM</label><br>
+    <input type="text" id="NIM" name="NIM"><br>
+
+    <label for="NAMA">NAMA</label><br>
+    <input type="text" id="NAMA" name="NAMA"><br>
+
+    <p>Gender:</p>
+    <div class="gender-group">
+      <input type="radio" id="Laki-laki" name="Gender" value="Laki-laki">
+      <label for="Laki-laki">Laki-laki</label>
+      <input type="radio" id="Perempuan" name="Gender" value="Perempuan">
+      <label for="Perempuan">Perempuan</label>
+    </div>
+
+    <label for="TempatLahir">Tempat Lahir</label><br>
+    <select id="TempatLahir" name="Tempat Lahir">
+      <option value="">Pilih Kota</option>
+      <option value="Denpasar">Denpasar</option>
+      <option value="Tabanan">Tabanan</option>
+      <option value="Gianyar">Gianyar</option>
+      <option value="Karangasem">Karangasem</option>
+      <option value="Jembrana">Jembrana</option>
+      <option value="Badung">Badung</option>
+      <option value="Klungkung">Klungkung</option>
+      <option value="Bangli">Bangli</option>
+      <option value="Buleleng">Buleleng</option>
+    </select><br>
+
+    <label for="TanggalLahir">Tanggal Lahir</label><br>
+    <input type="date" id="TanggalLahir" name="Tanggal Lahir"><br>
+
+    <label for="Alamat">Alamat</label><br>
+    <input type="text" id="Alamat" name="Alamat"><br>
+
+    <label for="NoHP">No. HP</label><br>
+    <input type="text" id="NoHP" name="NoHP"><br>
+
+    <label for="Email">Email</label><br>
+    <input type="text" id="Email" name="Email"><br>
+
+    <label for="PilihHobi">Hobi</label><br>
+    <select id="PilihHobi" name="Pilih Hobi">
+      <option value="">Pilih Hobi</option>
+      <option value="Membaca">Membaca</option>
+      <option value="Berenang">Berenang</option>
+      <option value="Mendengar Musik">Mendengar Musik</option>
+      <option value="Menari">Menari</option>
+    </select><br>
+
+    <button type="submit">KIRIM</button>
+  </form>
+</body>
+</html>
